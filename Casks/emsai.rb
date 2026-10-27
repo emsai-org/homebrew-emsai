@@ -6,7 +6,7 @@ cask "emsai" do
   # license.emsai.app/download/#{version}?from=brew, once it's deployed).
   url "https://github.com/emsai-org/emsai-releases/releases/download/v#{version}/Emsai-#{version}.dmg"
   name "Emsai"
-  desc "Every coding agent in one native window, and the Mac around them"
+  desc "Every coding agent in one native window"
   homepage "https://emsai.app/"
 
   livecheck do
