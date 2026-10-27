@@ -1,12 +1,13 @@
 cask "emsai" do
-  version "0.1.0-beta.1"
-  sha256 "b35870ab794865745473ce7b2a3a97beae65535c8d3aaa606eeb28b9637914e4"
+  version "0.1.0-beta.2"
+  sha256 "d25872811ba6f12a4463f640933edbb7c4c24d1ec67d0ac29628805d0d90d779"
 
   # The release's DMG on GitHub (the license service's counted link,
-  # license.emsai.app/download/#{version}?from=brew, once it's deployed).
+  # license.emsai.app/download/#{version}?from=brew, once it's deployed;
+  # Homebrew 5 checks the URL's host itself: no ).
   url "https://github.com/emsai-org/emsai-releases/releases/download/v#{version}/Emsai-#{version}.dmg"
   name "Emsai"
-  desc "Every coding agent in one native window"
+  desc "Every coding agent in one native window"   # brew style: no platform in it
   homepage "https://emsai.app/"
 
   livecheck do
@@ -18,7 +19,7 @@ cask "emsai" do
 
   # Emsai updates itself (its updater, signed and notarized releases).
   auto_updates true
-  depends_on macos: :tahoe
+  depends_on macos: :tahoe   # Tahoe or later (Homebrew 5: a symbol is the minimum)
 
   app "Emsai.app"
 
