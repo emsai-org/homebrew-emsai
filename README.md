@@ -8,15 +8,12 @@ tap: one cask, the same signed and notarized disk image as the one on
 ## Install
 
 ```sh
-brew trust emsai-org/tap     # Homebrew 7 loads nothing from a tap that isn't its own until you say so
-brew tap emsai-org/tap
-brew install --cask emsai
+brew install emsai-org/tap/emsai
 ```
 
-Emsai lands in `/Applications`. Open it from there: the 7-day trial
-starts, every feature, no card, no account. (Homebrew 7 refuses a cask from
-a tap that isn't Homebrew's until you trust it, and won't tap one on the
-way: that's what the first two lines are for.)
+That taps `emsai-org/tap`, trusts the cask and puts Emsai in
+`/Applications`. Open it from there: the 7-day trial starts, every feature,
+no card, no account.
 
 Requires macOS 26 (Tahoe) or later.
 
