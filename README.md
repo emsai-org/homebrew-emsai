@@ -8,11 +8,12 @@ tap: one cask, the same signed and notarized disk image as the one on
 ## Install
 
 ```sh
-brew install emsai-org/emsai/emsai
+brew install emsai-org/tap/emsai
 ```
 
-That taps `emsai-org/emsai` and puts Emsai in `/Applications`. Open it from
-there: the 7-day trial starts, every feature, no card, no account.
+That taps `emsai-org/tap`, trusts the cask and puts Emsai in
+`/Applications`. Open it from there: the 7-day trial starts, every feature,
+no card, no account.
 
 Requires macOS 26 (Tahoe) or later.
 
