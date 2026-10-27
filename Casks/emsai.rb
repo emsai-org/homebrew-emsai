@@ -4,10 +4,9 @@ cask "emsai" do
 
   # The release's DMG on GitHub (the license service's counted link,
   # license.emsai.app/download/#{version}?from=brew, once it's deployed).
-  url "https://github.com/emsai-org/emsai-releases/releases/download/v#{version}/Emsai-#{version}.dmg",
-      verified: "github.com/emsai-org/emsai-releases/"
+  url "https://github.com/emsai-org/emsai-releases/releases/download/v#{version}/Emsai-#{version}.dmg"
   name "Emsai"
-  desc "Every coding agent in one native window, and the Mac around them"
+  desc "Every coding agent in one native window"
   homepage "https://emsai.app/"
 
   livecheck do
@@ -19,7 +18,7 @@ cask "emsai" do
 
   # Emsai updates itself (its updater, signed and notarized releases).
   auto_updates true
-  depends_on macos: ">= :tahoe"
+  depends_on macos: :tahoe
 
   app "Emsai.app"
 
