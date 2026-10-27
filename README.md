@@ -1,2 +1,42 @@
-# homebrew-emsai
-Homebrew tap for Emsai: brew install emsai2/emsai/emsai
+# Emsai for Homebrew
+
+[Emsai](https://emsai.app) runs every coding agent on your Mac in one native
+window, and puts the Mac around them in the same app. This is its Homebrew
+tap: one cask, the same signed and notarized disk image as the one on
+[emsai.app/download](https://emsai.app/download).
+
+## Install
+
+```sh
+brew install emsai-org/emsai/emsai
+```
+
+That taps `emsai-org/emsai` and puts Emsai in `/Applications`. Open it from
+there: the 7-day trial starts, every feature, no card, no account.
+
+Requires macOS 26 (Tahoe) or later.
+
+## Update
+
+Emsai updates itself (Settings › General › Updates), so Homebrew doesn't
+treat it as outdated once the app has taken a newer release. To update
+through Homebrew anyway:
+
+```sh
+brew upgrade emsai
+```
+
+## Uninstall
+
+```sh
+brew uninstall emsai          # quits Emsai, removes the app and its login item
+brew uninstall --zap emsai    # also deletes its data: settings, notes, clipboard history
+```
+
+## Releases
+
+Each release is published on
+[emsai-org/emsai-releases](https://github.com/emsai-org/emsai-releases);
+the cask follows it, version and checksum, through a pull request here.
+
+Questions or problems: [hello@emsai.app](mailto:hello@emsai.app).
