@@ -1,6 +1,6 @@
 cask "emsai" do
-  version "0.1.0-beta.4"
-  sha256 "f7cd6d0a32baf2af5dc6b9b1742c2c42139a50228918ffc4ef2ca1faca88aa97"
+  version "0.1.0-beta.5"
+  sha256 "53660bebf47e01e9bc0ec305c39eefb06a47c02f02b02186bd3fcd151a22721b"
 
   # The release's DMG on GitHub (the license service's counted link,
   # license.emsai.app/download/#{version}?from=brew, once it's deployed;
